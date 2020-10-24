@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#container{
+width: 1060px;
+border-style: solid; 
+border-width: 5px;
+background-color: #D3D3D3;
+float:left; 
+}
+
+#game{
+border-style: none solid none none; 
+border-width: 5px;
+float:left;
+}
+
+#menu{
+float:left;
+}
+
+#shop{
+width: 277px;
+height: 400px;
+padding-top: 5px;
+padding-right: 5px;
+padding-bottom: 50px;
+padding-left: 5px;
+border-style: none none solid none; 
+border-width: 5px;
+background-color: #8b5a2b;
+visibility: hidden;
+}
+
+button{
+width: 100px;
+}
+
+#firstElement{
+margin: 10px;
+float: left;
+}
+
+#secondElement{
+margin: 10px;
+float: left;
+}
+
+#thirdElement{
+margin: 10px;
+float: left;
+}
+
+#fourthElement{
+margin: 10px;
+float: left;
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<canvas id="game" width="768" height="736"></canvas>
+	<div id="menu">
+		<div id="shop">
+			<h3 style="text-align: center">SHOP<h3>
+			<div id="firstElement">
+				<input type="image" src="sword.png"/>
+				<br/>
+				<button id="sword" title="atak: 10&#10;cena: 2">Sword</button>
+			</div>
+		
+			<div id="secondElement">
+				<input type="image" src="axe.png"/>
+				<br/>
+				<button id="axe" title="atak: 20&#10;cena: 4">Axe</button>
+			</div>
+		
+			<div id="thirdElement">
+				<input type="image" src="wand.png"/>
+				<br/>
+				<button id="wand" title="atak: 30&#10;cena: 6">Wand</button>
+			</div>
+		
+			<div id="fourthElement">
+				<input type="image" src="potion.png"/>
+				<br/>
+				<button id="potion" title="leczy: 20&#10;cena: 6">Potion</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
